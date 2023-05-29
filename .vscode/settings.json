@@ -1,0 +1,20 @@
+{
+    "python.pythonPath": "/home/gabriel/.cache/pypoetry/virtualenvs/crawley-AjMyj8M9-py3.10",
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.pytest_cache": true,
+        "**/__pycache__": true
+    },
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true
+}
