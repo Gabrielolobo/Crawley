@@ -1,8 +1,10 @@
 from argparse import ArgumentParser
 
+from .output import get_output
+
 
 def main(args):
-    pass
+    output_callable = get_output(args.output)
 
 
 if __name__ == "__main__":
