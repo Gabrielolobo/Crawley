@@ -1,7 +1,11 @@
 
 def get_output(input_type):
     if input_type == 'print':
-        return
+        return _print
+    elif input_type == 'save_json':
+        return _save_json
+    elif input_type == 'save_csv':
+        return _save_csv
 
 
 def _print():
