@@ -1,4 +1,5 @@
 # Concrete Vultr Crawler
+import requests
 from bs4 import BeautifulSoup
 
 from .crawler import Crawler
@@ -11,11 +12,11 @@ class VultrCrawler(Crawler):
 
     def _parse(self, main_page) -> list[Result]:
         soup = BeautifulSoup(main_page, 'html.parser')
-        cpu = soup.find(CPU)
-        ram = soup.find(MEMORY)
-        ssd = soup.find(STORAGE)
-        band = soup.find(BANDWIDTH)
-        price = soup.find(PRICE)
+        cpu = soup.find_all("h3", "package__title h6 center")
+        ram = soup.find_all("MEMORY")
+        ssd = soup.find_all("STORAGE")
+        band = soup.find_all("BANDWIDTH")
+        price = soup.find_all("PRICE")
 
         return [
             Result(
@@ -28,4 +29,10 @@ class VultrCrawler(Crawler):
         ]
 
     def _get(self):
-        return
+        response = requests.get(
+            "https://www.vultr.com/products/bare-metal/#pricing", timeout=0.2)
+
+        if response.status_code == 200:
+            return
+        else:
+            print(response.status_code)
