@@ -6,7 +6,7 @@ from .crawlers import AVAILABLE_CRAWLERS
 
 # Calls crawler results
 def main(args):
-    output_callable = get_output(args.output, args.data)
+    output_callable = get_output(args.output)
 
     crawler = AVAILABLE_CRAWLERS[args.crawler]
     results = crawler.run()
