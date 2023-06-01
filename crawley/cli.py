@@ -11,7 +11,7 @@ def main(args):
     crawler = AVAILABLE_CRAWLERS[args.crawler]
     results = crawler.run()
 
-    output_callable(results)
+    output_callable(results, args.filename)
 
 
 if __name__ == "__main__":
@@ -22,7 +22,14 @@ if __name__ == "__main__":
     )
 
     cli_parser.add_argument(
-        'output', choices=['print', 'save_json', 'save_csv'])
+        'output', choices=['print', 'save_json', 'save_csv'],
+        help='Output format: print, save_json, save_csv'
+    )
+
+    cli_parser.add_argument(
+        '--filename', default=None,
+        help='Optional filename for saving JSON or CSV output'
+    )
 
     args = cli_parser.parse_args()
     main(args)
