@@ -20,5 +20,10 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.autopep8"
     },
-    "python.formatting.provider": "autopep8"
+    "python.formatting.provider": "autopep8",
+    "cSpell.words": [
+        "cpus",
+        "Hostgator",
+        "Vultr"
+    ]
 }
