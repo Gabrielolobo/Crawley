@@ -3,8 +3,8 @@ from dataclasses import dataclass
 
 @dataclass
 class Result:
-    process_unit: str
-    memory: str
-    storage: str
-    transfer: str
-    monthly_cost: str
+    process_unit: list
+    memory: list
+    storage: list
+    transfer: list
+    monthly_cost: list
