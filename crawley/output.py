@@ -42,11 +42,12 @@ def _save_csv(results, *args):
         filename = args[0]
     else:
         filename = 'output.csv'
-    if isinstance(results, list) and len(results) > 0 and isinstance(results[0], dict):
-        keys = results[0].keys()
+    serialized_results = [_serialize_result(result) for result in results]
+    if len(serialized_results) > 0:
+        keys = serialized_results[0].keys()
         with open(filename, 'w', newline='') as file:
             writer = csv.DictWriter(file, fieldnames=keys)
             writer.writeheader()
-            writer.writerows(results)
+            writer.writerows(serialized_results)
     else:
-        print("Invalid data format. Results should be a list of dictionaries.")
+        print("No results to save.")
