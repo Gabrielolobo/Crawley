@@ -1,0 +1,9 @@
+cpu,monthly_cost,memory,storage,bandwidth
+Intel E3-1270,$120/month,['32 GBMemory'],['2 x 240 GBSSD'],['5 TBBandwidth']
+Intel E-2286G,$185/month,['32 GBMemory'],['2 x 960 GBSSD'],['10 TBBandwidth']
+Intel E-2288G,$350/month,['128 GBMemory'],[],['10 TBBandwidth']
+Intel E-2388G,$350/month,['128 GBMemory'],[],['10 TBBandwidth']
+AMD EPYC 7443P,$725/month,['256 GBMemory'],['2 x 480 GBSSD'],['10 TBBandwidth']
+AMD EPYC 7543P,"$1,575/month",['512 GBMemory'],['2 x 480 GBSSD'],['15 TBBandwidth']
+AMD EPYC 7543P,"$1,575/month",['512 GBMemory'],['2 x 480 GBSSD'],['15 TBBandwidth']
+2 x AMD EPYC 7713,"$5,500/month",['2048 GBMemory'],['2 x 480 GBSSD'],['25 TBBandwidth']
