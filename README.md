@@ -45,7 +45,7 @@ You can choose the name of your file by switching in (output).
 
 You can choose the name of your file by switching in (output).
 
- That's the end of it, i hope this application can live up to 
+ That's the end of it. I hope this application can live up to 
 the standards of good python Implementation.
 
 
