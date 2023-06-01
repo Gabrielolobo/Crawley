@@ -4,11 +4,11 @@ This script allows you to run crawlers and save the results in various formats.
 
 # Installation
 
-1.Clone the Repository:
+1.CLONE REPOSITORY:
 
  -git clone https://github.com/your/repository.git
 
-2.Install with poetry:
+2.INSTALL WITH POETRY:
 
 Inside the Crawley directory, do:
 
@@ -16,7 +16,7 @@ Inside the Crawley directory, do:
  
 This will setup the enviroment to run the cli.
 
-3.Inside Crawley, you will run the command:
+3.INSIDE CRAWLEY, YOU WILL RUN THE COMMAND:
 
  -python -m crawley.cli (Crawler) (argument) 
   
@@ -33,9 +33,9 @@ Example: run "python -m crawley.cli VultrCrawler print"
 
 This should print the required information crawled from vultr website.
 
-To save a file in json format, execute:
+4.TO SAVE A FILE IN JSON FORMAT, EXECUTE:
 
- --python -m crawley.cli (Crawler) (argument) --filename (output).json
+ -python -m crawley.cli (Crawler) (argument) --filename (output).json
 
 You can choose the name of your file by switching in (output).
 
