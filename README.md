@@ -39,4 +39,13 @@ This should print the required information crawled from vultr website.
 
 You can choose the name of your file by switching in (output).
 
+5.TO SAVE A FILE IN CSV FORMAT, EXECUTE:
+
+ -python -m crawley.cli (Crawler) (argument) --filename (output).csv
+
+You can choose the name of your file by switching in (output).
+
+ That's the end of it, i hope this application can live up to 
+the standards of good python Implementation.
+
 
