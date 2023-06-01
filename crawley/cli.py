@@ -6,14 +6,12 @@ from .crawlers import AVAILABLE_CRAWLERS
 
 # Calls crawler results
 def main(args):
-    output_callable = get_output(args.output)
+    output_callable = get_output(args.output, args.data)
 
-    all_results = []
-    for crawler in AVAILABLE_CRAWLERS.values():
-        results = crawler.run()
-        all_results.extend(results)
+    crawler = AVAILABLE_CRAWLERS[args.crawler]
+    results = crawler.run()
 
-    output_callable(all_results)
+    output_callable(results)
 
 
 if __name__ == "__main__":
@@ -24,7 +22,7 @@ if __name__ == "__main__":
     )
 
     cli_parser.add_argument(
-        'output', choices=['print', 'save json', 'save csv'])
+        'output', choices=['print', 'save_json', 'save_csv'])
 
     args = cli_parser.parse_args()
     main(args)
