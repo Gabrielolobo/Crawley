@@ -26,7 +26,7 @@ class VultrCrawler(Crawler):
             cpus = card.find("h3", "package__title h6 center").text.strip()
             price = card.find("span", "price__value").text.strip()
             ram = self.clean_element(card, 'li:-soup-contains("Memory")')
-            ssd = self.clean_element(card, 'li:-soup-contains("SSD")')
+            ssd = self.clean_element(card, 'li:-soup-contains("SSD","NVMe")')
             band = self.clean_element(card, 'li:-soup-contains("Bandwidth")')
 
             # pdb.set_trace()
