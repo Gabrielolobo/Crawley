@@ -42,11 +42,11 @@ This project allows you to run crawlers and save the results in various formats.
  -python -m crawley.cli (Crawler) (argument) 
   
 
-### To print the required information crawled the website: 
+### To print the required information crawled from the website: 
 
 - python -m crawley.cli (Crawler) print"
 
-This should print the required information crawled from vultr website.
+This should print the required information crawled from the website.
 
 ### To save file in .json, execute:
 
