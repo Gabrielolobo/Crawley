@@ -52,13 +52,17 @@ This should print the required information crawled from the website.
 
 - python -m crawley.cli (Crawler) (argument) --filename (output).json
 
-You can choose the name of your file by switching in (output).
+The .json file will be saved in the current directory
+
+* You can choose the name of your file by switching in (output).
 
 ### To save a file in .csv, execute:
 
 - python -m crawley.cli (Crawler) (argument) --filename (output).csv
 
-You can choose the name of your file by switching in (output).
+The .csv file will be saved in the current directory
+
+* You can choose the name of your file by switching in (output).
 
 ## Final Note
 
