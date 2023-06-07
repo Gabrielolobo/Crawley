@@ -14,13 +14,13 @@ This project allows you to run crawlers and save the results in various formats.
 
 - poetry install
 
- * To install the enviroment via poetry.
+To install the enviroment via poetry.
 
 ### Then, do:
  
 - poetry shell
 
- * To activate the virtual enviroment.
+To activate the virtual enviroment.
 
 ### This will setup the enviroment to run the cli.
 
