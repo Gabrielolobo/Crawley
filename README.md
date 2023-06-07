@@ -2,7 +2,7 @@
 
 This project allows you to run crawlers and save the results in various formats.
 
-# Installation
+# Installing and Running
 
 ## 1. Clone Repository
 
